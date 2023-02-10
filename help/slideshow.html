@@ -1,0 +1,99 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
+<title>Tourisme devenu facile en ligne</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+</head>
+<body>
+<style type="text/css">
+	html, body{
+		width: 50%;
+		height: 50%;
+		padding: 50px;
+		margin: 0px;
+	}
+
+	.slider{
+		display: block;
+		width: 50%;
+		height: 50%;
+		background-color: black;
+		overflow: hidden;
+		position: absolute;
+		background-color: white;
+	}
+
+	.slider * {
+		position: absolute;
+		display: block;
+		width: 50%;
+		height: 50%;
+		animation: slide 15s infinite;
+		overflow: hidden;
+	}
+
+	.slide:nth-child(1) {
+		left: 0%;
+		animation-delay: 5s;
+		background-image: url('1.jpg');
+		background-size: cover;
+		background-position: center;
+		z-index: 1;
+	}
+
+	.slide:nth-child(2) {
+		left: 0%;
+		animation-delay: 4s;
+		background-image: url('2.jpg');
+		background-size: cover;
+		background-position: center;
+		z-index: 2;
+	}
+
+	.slide:nth-child(3) {
+		animation-delay: 7s;
+		background-image: url('3.jpg');
+		background-size: cover;
+		background-position: center;
+		z-index: 3;
+	}
+
+	.slide:nth-child(4) {
+		left: 0%;
+		animation-delay: 10s;
+		background-image: url('4.jpg');
+		background-size: cover;
+		background-position: center;
+		z-index: 4;
+	}
+
+	.slide p{
+		font-family: Arial;
+		font-size: 70px;
+		text-align: center ;
+		display: inline-block;
+		width: 100%;
+		margin-top: 340px;
+		color: blue;
+	}
+	.slide
+
+	@keyframes slide{
+		0% {left: 100%; width: 20%;}
+		5%{left: 10%;}
+		25%{left: 10%;}
+		30%{left: -50%;}
+		30.0001%{left: -100%; width:0%;}
+		100%{left: 100%; width: 0%;} 
+	}
+</style>
+	<div class="slider">
+		<div class="slide"><p>slide 1</p></div>
+		<div class="slide"><p>slide 2</p></div>
+		<div class="slide"><p>slide 3</p></div>
+		<div class="slide"><p>slide 4</p></div>
+	</div>
+</body>
+</html>
